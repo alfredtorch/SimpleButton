@@ -11,5 +11,7 @@
 #include "Buttons/RotaryEncoderI2C.h"
 #include "Buttons/AnalogStick.h"
 #include "Buttons/PS2Gamepad.h"
+#include "Buttons/LedExpander.h"
+#include "Buttons/StepperExpander.h"
 
 #endif // ifndef SimpleButton_h
