@@ -32,12 +32,12 @@ namespace simplebutton {
     }
     boolean StepperExpander::run()
     {
-        if (!stepstogo) // will be true if zero (!false = true)
-        {//we're done
-            return true;
-        } else {
-            nextStep();
-        }
+    if (!stepstogo) // will be true if zero (!false = true)
+    {//we're done
+        return true;
+    } else {
+        nextStep();
+    }
     }
 
 // Called because we still have to move a stepper. Do a time check to see if
