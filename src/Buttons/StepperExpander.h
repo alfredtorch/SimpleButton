@@ -19,6 +19,7 @@ namespace simplebutton {
             void moveToPos(unsigned int pos);
             void moveToRev(unsigned int pos);
             int currentPosition();
+            int currentRevolution();
             int stepsToGo();
             void stop();
             virtual ~StepperExpander();
