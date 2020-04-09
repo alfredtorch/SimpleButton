@@ -16,7 +16,8 @@ namespace simplebutton {
             StepperExpander(GPIOExpander* pcf, int pin1, int pin2, int pin3, int pin4, int steps, unsigned long stepdelay);
             boolean run();
             void move(int steps);
-            void moveTo(unsigned int pos);
+            void moveToPos(unsigned int pos);
+            void moveToRev(unsigned int pos);
             int currentPosition();
             int stepsToGo();
             void stop();
@@ -40,6 +41,7 @@ namespace simplebutton {
             int p4; //output pin
             int stepsperrev; //the number of steps in one ref zero indexed.
             int currentstep; //the current step number, zero indexed.
+            int currentrev; //the current rev
             int stepstogo;   //the remaining steps to complete the curret movement.
             unsigned long steptime; //the delay time between steps
             unsigned long lastStepTime; //the last step time in microseconds
